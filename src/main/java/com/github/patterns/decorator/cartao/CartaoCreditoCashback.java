@@ -1,4 +1,4 @@
-package com.github.patterns.decorator;
+package com.github.patterns.decorator.cartao;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

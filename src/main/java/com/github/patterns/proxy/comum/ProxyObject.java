@@ -1,4 +1,4 @@
-package com.github.patterns.proxy;
+package com.github.patterns.proxy.comum;
 
 public class ProxyObject extends Subject {
 
