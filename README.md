@@ -16,3 +16,8 @@
   - nos métodos da interface, chama os métodos os atributo (objecto dito no item acima)
 - não é ideal para classes muito diferentes (desafio e maior)
 - para casos onde a composição ou herança não são possíveis.
+
+## facade
+- cria-se uma interface simplificada para o cliente, quando esta executa várias etapas para o processo
+- diferente do adapter, que tenta mudar a interface para o cliente sentir a diferença
+- muitos falam desse padrão, como padrão composite patter ou orchestrator patter.
