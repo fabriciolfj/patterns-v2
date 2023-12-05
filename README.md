@@ -21,3 +21,19 @@
 - cria-se uma interface simplificada para o cliente, quando esta executa várias etapas para o processo
 - diferente do adapter, que tenta mudar a interface para o cliente sentir a diferença
 - muitos falam desse padrão, como padrão composite patter ou orchestrator patter.
+
+## flyweights
+- atua em vários contextes simultaneamente
+- ideal quando precisamos de um grande número de objetos semelhantes, que são únicos em apenas alguns parâmetros
+- este padrão podemos separar em dois estados:
+  - intrínseco -> está dentro do padrão, ele cria as instâncias, pode ser compartilhada entre objetos semelhantes, seus dados são imutáveis
+  - extrínsecos -> o cliente cria as instâncias e as armazena, varia de acordo com o contexto
+
+## composite pattern
+- padrão utíl para representear hierarquias de objetos
+- onde um objeto é uma composição de um ou mais objetos semelhantes
+- semelhante a estrutura de uma arvore
+
+## bridge
+- quando temos uma herança e uma implementação, conectamos ambas através de uma ponte
+- é um padrão estrutural que visa separar a abstração (interface) de sua implementação, permitindo que elas possam variar independentemente
