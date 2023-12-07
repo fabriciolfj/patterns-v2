@@ -37,3 +37,15 @@
 ## bridge
 - quando temos uma herança e uma implementação, conectamos ambas através de uma ponte
 - é um padrão estrutural que visa separar a abstração (interface) de sua implementação, permitindo que elas possam variar independentemente
+
+## visitor
+- permite adicionar novas operações a uma hierarquia de classes, sem modificar as  originais.
+- no máximo somente adicionamos um método a mesma, para que permita visitor.
+- obs: para cada nova operação, cria uma nova subclasse de visitante.
+
+## observer pattern
+- também conhecido como publish-subscriber
+- quando ocorre a mudança em um objeto, outros objetos interessados são notificados.
+
+## strategy (policy)
+- permite definir uma familha de algoritmos, colocá-los em classes separadas e torna-los intercambiáveis
