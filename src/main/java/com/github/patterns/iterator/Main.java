@@ -18,11 +18,15 @@ public class Main {
         System.out.println(iterator.next());
         System.out.println("next?" + iterator.hasNext());
 
-        System.out.println(iterator.next());
-        System.out.println("next?" + iterator.hasNext());
-        System.out.println(iterator.next());
-        System.out.println("next?" + iterator.hasNext()); // da erro
+        if (iterator.hasNext()) {
+            System.out.println(iterator.next());
+            System.out.println("next?" + iterator.hasNext());
+        }
 
+        if (iterator.hasNext()) {
+            System.out.println(iterator.next());
+            System.out.println("next?" + iterator.hasNext());
+        }
 
     }
 }
