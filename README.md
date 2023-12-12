@@ -49,3 +49,22 @@
 
 ## strategy (policy)
 - permite definir uma familha de algoritmos, colocá-los em classes separadas e torna-los intercambiáveis
+
+## template method
+- uma classe com comportamento padrão, aonde as classes filhas podem substituir partes desse comportamento
+
+## command pattern
+- quando temos operações de fazer e desfazer
+- temos alguns participantes nesse patter, como:
+  - receive -> que executa o processamento
+  - command -> que executa parte do receive
+  - invocador -> aonde estão os comandos
+  - cliente -> que cria os comandos e insere no invocador, executando-o
+
+## iterator
+- uma jeito universal de percorrer um conjunto de objetos armazenados (coleção), sem se preocupar com a forma como foram gravados
+- possue alguns operadores:
+  -  current
+  - hasNext
+  - next
+  - first
