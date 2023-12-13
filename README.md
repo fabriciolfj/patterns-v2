@@ -68,3 +68,31 @@
   - hasNext
   - next
   - first
+
+## memento
+- guardar o estado anterior de um objeto, sem interferir no encapsulamento.
+- Os participantes do padrão Memento são:
+  - Originator: objeto que tem seu estado guardado. Possui métodos para salvar e restaurar seu estado.
+  - Memento: objeto que armazena o estado interno do Originator.
+  - Caretaker: objeto responsável por gerenciar e armazenar os mementos.
+- O funcionamento básico é:
+  - O originator se responsabiliza por produzir instâncias Memento contendo snapshots de seu estado interno.
+  - O caretaker recebe e armazena os mementos, geralmente em uma pilha (stack), sem conhecer seus detalhes.
+  - Para recuperar um estado, o caretaker retorna o memento desejado para o originator.
+
+
+## state
+- O State é um padrão de projeto comportamental que permite que um objeto altere seu comportamento quando o seu estado interno muda.
+- Ele funciona definindo estado separados para um objeto, encapsulados em classes diferentes, e fazendo o objeto delegar o trabalho para o objeto estado que corresponde ao seu estado atual.
+- Os participantes do padrão State são:
+  - Context: Classe base que possui uma instância do Estado Concreto que define o estado atual do Context.
+  - State: Interface que declara os métodos que os Estados Concretos devem implementar.
+  - ConcreteState: Classes que implementam a interface State para cada estado.
+- O fluxo é:
+  - O Context delega as requisições do cliente para o Estado Concreto.
+  - O objeto Estado Concreto realiza o trabalho de acordo com seu estado atual.
+  - O Context pode alternar o Estado Concreto atual quando o estado interno muda.
+- Vantagens:
+  - Localiza o comportamento específico do estado em classes separadas
+  - Facilita a adição de novos estados
+  - Evita condicionais para o estado na classe Context
