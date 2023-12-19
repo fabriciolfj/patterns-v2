@@ -96,3 +96,13 @@
   - Localiza o comportamento específico do estado em classes separadas
   - Facilita a adição de novos estados
   - Evita condicionais para o estado na classe Context
+
+## mediator
+- um objeto não se comunica ou se liga a outro, ele usa o mediator para isso
+- mediator fica no meio de uma comunicação entre um objeto e outro
+- seria uma interface para vários objetos
+
+
+## chain of responsability
+- cria-se uma cadeia de manipuladores, onde cada um manipula uma parte específica da solicitação
+- o que não conseguir manipular, passa para frente
