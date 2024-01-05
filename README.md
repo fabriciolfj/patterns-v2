@@ -23,7 +23,7 @@
 - muitos falam desse padrão, como padrão composite patter ou orchestrator patter.
 
 ## flyweights
-- atua em vários contextes simultaneamente
+- atua em vários contextos simultaneamente
 - ideal quando precisamos de um grande número de objetos semelhantes, que são únicos em apenas alguns parâmetros
 - este padrão podemos separar em dois estados:
   - intrínseco -> está dentro do padrão, ele cria as instâncias, pode ser compartilhada entre objetos semelhantes, seus dados são imutáveis
