@@ -106,3 +106,20 @@
 ## chain of responsability
 - cria-se uma cadeia de manipuladores, onde cada um manipula uma parte específica da solicitação
 - o que não conseguir manipular, passa para frente
+
+
+## abstract factory
+- O padrão Abstract Factory fornece uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas.
+
+## factory method
+- O padrão Factory Method fornece uma interface para criar objetos em uma superclasse, mas permite que as subclasses alterem o tipo de objetos que serão criados.
+
+## Diferenca entre factory method vs abstract factory
+```
+Propósito: O Factory Method é usado para criar objetos de uma classe específica, enquanto o Abstract Factory é usado para criar famílias de objetos relacionados.
+Número de métodos fábrica: O Factory Method tem um único método fábrica, enquanto o Abstract Factory pode ter vários métodos fábrica.
+Hierarquia de classes: No Factory Method, a hierarquia de classes é composta por uma classe abstrata (ou interface) e várias classes concretas que a implementam. No Abstract Factory, temos uma interface para a fábrica abstrata e várias implementações concretas dessa interface.
+Flexibilidade: O Abstract Factory é mais flexível, pois permite adicionar novos tipos de produtos (objetos) sem modificar o código existente, desde que sejam implementadas novas classes concretas de fábrica. No Factory Method, se você quiser adicionar um novo tipo de produto, precisará modificar a hierarquia de classes existente.
+Complexidade: O Abstract Factory é mais complexo de implementar do que o Factory Method, pois envolve mais interfaces e classes.
+Em resumo, o Factory Method é usado quando você precisa criar objetos de uma classe específica, enquanto o Abstract Factory é usado quando você precisa criar famílias de objetos relacionados. O Factory Method é mais simples, enquanto o Abstract Factory é mais flexível e complexo.
+```
